@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/imc1"
+        />
+
+    <TextView
+        android:id="@+id/poidsid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Poids"
+        android:layout_marginLeft="50dp"
+        android:layout_centerVertical="true"
+        android:textSize="60dp"
+        android:layout_marginBottom="50dp"
+        />
+
+
+    <TextView
+        android:id="@+id/tailleid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="taille"
+        android:layout_below="@+id/poidsid"
+        android:layout_marginLeft="50dp"
+        android:layout_centerVertical="true"
+        android:textSize="60dp"
+
+        />
+
+
+    <EditText
+        android:id="@+id/edittextpoidsid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/poidsid"
+        android:layout_toRightOf="@+id/poidsid"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:textSize="60dp"
+        android:layout_marginLeft="50dp" />
+
+    <EditText
+        android:id="@+id/edittexttailleid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/poidsid"
+        android:layout_toRightOf="@id/tailleid"
+        android:layout_alignBottom="@+id/tailleid"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="50dp"
+        android:textSize="60dp"
+        />
+
+
+    <Button
+        android:id="@+id/calculbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calculer"
+        android:layout_below="@id/tailleid"
+        android:shadowColor="@color/purple_200"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:textSize="60dp"
+        android:layout_marginTop="50dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/res"/>
+
+</RelativeLayout>
